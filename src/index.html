@@ -1,11 +1,688 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Landing Page Template</title>
-    <meta name="description" content="" />
-</head>
-<body>
-Test
-</body>
-</html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>We find goods</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Raleway:500,400,300" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/plugins.css">
+        <link rel="stylesheet" href="css/owl.carousel.css" />
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <!-- Color CSS -->
+        <link rel="stylesheet" href="css/colors/blue.css" id="colors">
+
+        <!--DARK CSS-->
+        <!-- <link rel="stylesheet" href="css/colors/dark.css">-->
+
+
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#main-navbar">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="loader">
+            <div class="loaded">&nbsp;</div>
+        </div>
+
+        <header>
+            <!-- if you want dark nav bar just replace 2 css bottom line (av-dark navbar-inverse) and add this (nav-dark navbar-inverse)-->
+            <nav class="navbar navbar-1 nav-light navbar-default  navbar-fixed-top custom-nav" id="main-navbar" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- <a href="index.html" class="navbar-brand top-logo"><img src="images/logo.png" alt="logo"></a> -->
+                    </div> <!-- end navbar-header -->
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Services</a></li>
+                            <li><a href="#describe">Why Us</a></li>
+                            <li><a href="#service">Why Taiwan</a></li>
+                            <!-- <li><a href="#team">Our team</a></li> -->
+                            <!-- <li><a href="#contact">Contact</a></li> -->
+                        </ul>
+                    </div> <!-- end collapse -->
+                </div> <!-- end container -->
+            </nav>
+        </header><!--home section-->
+
+
+        <section id="home" class="home">
+            <div class="surface-wrap"><!-- <div id="surface"></div>--></div>
+            <div class="canvas-wrap"><!--<canvas id="canvas"></canvas>--></div>
+            <div class="overlay">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <div class="home-intro-half-try">
+                                <!--Header text -->
+                                <h1>We Find <b>Goods</b> in <b>Taiwan</b></h1>
+                                <p>We will be your sourcing agent in Taiwan.</p>
+                                <p>When importing from Taiwan and, you’ll be facing language barriers, cultural differences and all the usual challenges of a buyer-seller relationship.</p>
+                                <p><b>We will be your super agent!</b></p>
+                                <!--DOWNLOAD BUTTON -->
+                                <!-- <div class="download-button">
+                                    <a href="#" class="btn btn-default download-btn">Register Now</a>
+                                    <a href="#" class="btn btn-default btn-lg">Download Brochure</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-5">
+                            <div class="home-intro-2nd-half-try">
+                                <div class="try-registration-form">
+                                    <h3>Try Our Service</h3>
+
+                                     <div id="error"></div>
+
+                                        <form method="post" action="scripts/callback.php" class="try-form" id="callback" role="form">
+
+                                            <input class="form-control" id="names" type="text" name="names" placeholder="Your Name">
+                                            <input class="form-control" id="emails" type="email" name="emails" placeholder="Your Email">
+                                            <input class="form-control" id="numbers" type="tel" name="numbers" placeholder="Phone Number">
+
+                                            <button class="btn btn-primary btn-lg center-block" type="submit" id="submit" name="submit" data-loading-text="Loading...">Get Started</button>
+
+                                        </form>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="features" class="sections">
+            <div class="container">
+                <div class="row">
+
+                    <!--  Heading-->
+                    <div class="heading black-text wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="title text-center"><h1>Our Services</h1></div>
+                        <div class="subtitle text-center "><h5>Here are the areas in which we work:</h5></div>
+                        <div class="separator text-center"></div>
+                    </div>
+
+                    <div class="col-sm-6 wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2 text-right pull-left">
+                                <i class="fa fa-anchor"></i>
+                            </div>
+                            <h4>Sourcing Product in Taiwan</h4>
+                            <p>We help find the right supplier and negotiate the best price for you.</p>
+                        </div>
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2 text-right pull-left">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h4>Product Inspection</h4>
+                                <p>We help basic inspection and provide measuremnt reports</p>
+                            </div>
+
+                        </div>
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2 text-right pull-left">
+                                <i class="fa fa-empire"></i>
+                            </div>
+                            <h4>Sample collection</h4>
+                            <p>We can collect multiple samples and send them to you in one package.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2 pull-left">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <h4>Test reports</h4>
+                            <p>We also help source and contact the organizations that provide verification, testing and certification services.</p>
+                        </div>
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2  pull-left">
+                                <i class="fa fa-fax"></i>
+                            </div>
+                            <h4>Product specifications</h4>
+                            <p>We can help you define the specifications that will meet your needs.</p>
+                        </div>
+                        <div class="feature-item pull-left">
+                            <div class="feature-icon2 pull-left">
+                                <i class="fa fa-navicon"></i>
+                            </div>
+                            <h4>Customized service</h4>
+                            <p>Any cusomized service are negotiable. We do our best to make it happen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- testimonial Section-->
+        <section class="testimonial">
+            <div class="overlay-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 padding-eighty">
+                            <div class="testimonials">
+                                <div class="testimonial-item2">
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                      Very responsive, answers in short time and pays attentions to your requirements. We will definitely use this service again in the future.
+                                        <i class="fa fa-quote-right pull-right"></i></div>
+                                    <div class="white-separator"></div>
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">Luke</div>
+                                    <!-- <div class="testimonial-info">Freelancer</div> -->
+                                </div>
+                                <div class="testimonial-item2">
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                      Great work and fast. Looking forward to work other projects in the future.
+                                        <i class="fa fa-quote-right pull-right"></i></div>
+                                    <div class="white-separator"></div>
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">David</div>
+                                    <!-- <div class="testimonial-info">Engineer</div> -->
+                                </div>
+                                <div class="testimonial-item2">
+                                    <div class="testimonial-msg"><i class="fa fa-quote-left"></i>
+                                      Very fast and responsive in communication. The company research proved to be more challenging than expected, but wefindgoods undertook a big revision effort and scanned a large pool of relevant companies.
+                                        <i class="fa fa-quote-right pull-right"></i></div>
+                                    <div class="white-separator"></div>
+                                    <!--  INFORMATION -->
+                                    <div class="testimonial-name">Sherry</div>
+                                    <!-- <div class="testimonial-info">CEO, Envato pty Ltd.</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial Section End-->
+
+
+
+
+        <section id="describe" class="sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+
+                        <!--  Heading-->
+                        <div class="heading black-text wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title-half"><h1>Why Us </h1></div>
+                            <!-- <div class="subtitle-half"><h5></h5></div> -->
+                            <div class="separator-left"></div>
+                        </div>
+
+                        <div class="describe-details wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+                            <p>
+                              Most western companies are attracted by chinese markets due to the low cost of production. Finding the right sourcing agent will help you resolve the following issues:
+                            </p>
+
+                            <ul class="describe-list">
+                                <li><i class="fa fa-h-square"></i> <span>Language barrier.</span> </li>
+                                <li><i class="fa fa-database"></i> <span>Find the right supplier.</span> </li>
+                                <li><i class="fa fa-shekel"></i> <span>Negotiate the best price for you.</span> </li>
+                                <li><i class="fa fa-database"></i> <span>We get the things done.</span> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center describe-images wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+                            <img src="images/partnership.jpg" alt="">
+                        </div>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+
+
+
+        <!-- funfact Section-->
+        <section id="funfact" class="funfact">
+            <div class="overlay-img">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- funfact -->
+                        <div class="heading white-text wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title text-center"><h1>Some Data</h1></div>
+                            <div class="subtitle text-center "><h5>We just started...</h5></div>
+                            <div class="separator text-center"></div>
+                        </div>
+
+                        <div class="funfacts-counter white-text">
+                            <div class="col-sm-6">
+                                <i class="fa fa-trophy"></i>
+                                <div class="statistic-counter">9</div>
+                                <div class="statistic-text">Completed Projects</div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-group"></i>
+                                <div class="statistic-counter">6</div>
+                                <div class="statistic-text">Satisfied Clients</div>
+
+
+                            </div>
+                            <!-- <div class="col-sm-3">
+                                <i class="fa fa-code"></i>
+                                <div class="statistic-counter">72,147</div>
+                                <div class="statistic-text">Line Of Code</div>
+
+                            </div>
+                            <div class="col-sm-3">
+                                <i class="fa fa-coffee"></i>
+                                <div class="statistic-counter">6300</div>
+                                <div class="statistic-text">Cup Of Coffee</div>
+
+                            </div> -->
+
+                        </div>
+
+
+                    </div><!-- funfact row End-->
+                </div><!-- funfact Overlay End-->
+            </div><!-- funfact Container End-->
+        </section>
+        <!-- funfact Section End-->
+
+        <section id="price" class="price-1 sections">
+            <div class="container">
+                <div class="row plans">
+
+                    <!--  Heading-->
+                    <div class="heading wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="title text-center"><h1>Service Price &amp; Plan</h1></div>
+                        <div class="subtitle text-center "><h5>Only indicate service fee. All necessary charge are exclusive. Old customer can get 10% off.</h5></div>
+                        <div class="separator text-center"></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="plan wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title">Supplier Contact</div>
+                            <div class="price">Free</div>
+                            <div class="description">
+                                <ul>
+                                  <li>2-3 supplier contacts and product information</li>
+                                  <li>delivered in 3 days</li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-primary" href="#">ORDER NOW</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="plan wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title">Complete Sourcing</div>
+                            <div class="price">60USD/product</div>
+                            <div class="description">
+                                <ul>
+                                  <li>2-3 supplier contacts and product information</li>
+                                  <li>negociation with the supplier</li>
+                                  <li>complete quotation</li>
+                                  <li>Sample collection and shipping</li>
+                                  <li>delivered in 7 - 14 days</li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-primary" href="#">ORDER NOW</a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="plan wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <div class="title">Customized Service</div>
+                            <div class="price">Negotiable</div>
+                            <div class="description">
+                                <ul>
+                                  <li>Product inspection</li>
+                                  <li>Third-party testing, verification organizations.</li>
+                                  <li>Others</li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-primary" href="#">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.container-->
+        </section>
+
+        <!--call to action-->
+        <section class="call-to-action call-to-action2">
+            <div class="container">
+                <div class="row">
+                    <form>
+                        <div class="col-sm-12">
+                            <h1 class="white-text text-center">Want to discuss your New Project ?</h1>
+                        </div>
+                        <div class="col-sm-12">
+                            <a href="#contact"><button class="btn btn-primary btn-lg  text-center" type="submit">Contact Us</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="sections">
+            <div class="container">
+                <div class="row">
+                    <div class="details-full-width">
+
+
+                        <div class="col-sm-8 col-sm-offset-2 text-center">
+
+                            <!--  Heading-->
+                            <div class="heading black-text wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                                <div class="title"><h2>Why Taiwan?</h2></div>
+                                <div class="subtitle"><h5>Not just that we love Taiwan...</h5></div>
+                            </div>
+                            <p class=" wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1.5s">
+                                <ul>
+                                    <li><a href="https://www.intouch-quality.com/blog/manufacturing-in-taiwan-vs.-mainland-china-an-importers-guide" target="_blank">MANUFACTURING IN TAIWAN VS. MAINLAND CHINA: AN IMPORTER’S GUIDE</a></li>
+                                    <li><a href="https://ypi-asia.com/2018/10/15/made-in-taiwan-the-label-everybody-knows/" target="_blank">Made in Taiwan | The most well known tag in the world?</a></li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team Section-->
+        <!-- <section id="team" class="team sections">
+            <div class="container"> -->
+
+                <!-- Team Heading-->
+                <!-- <div class="heading wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                    <div class="title text-center"><h1>Our Team</h1></div>
+                    <div class="subtitle text-center "><h5>This is subtile. lorem ipsum dolar shit amet</h5></div>
+                    <div class="separator text-center"></div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="team-member wow fadeInLeft animated" data-wow-offset="120" data-wow-duration="1.5s ">
+                            <img src="images/team/team1.jpg" class="img-circle " alt="Team Member">
+                            <h2>John Doe</h2>
+                            <h5>Founder &amp; CEO</h5>
+
+                            <p class="space-top-small">
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul> -->
+                        <!-- </div>end team member -->
+                    <!-- </div> -->
+
+                    <!-- <div class="col-sm-4">
+                        <div class="team-member wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <img src="images/team/team2.jpg" class="img-circle" alt="Team Member">
+                            <h2>John Smith</h2>
+                            <h5>Creative Director</h5>
+
+                            <p class="space-top-small">
+                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul> -->
+                        <!-- </div>end team member -->
+                    <!-- </div> -->
+
+                    <!-- <div class="col-sm-4">
+                        <div class="team-member wow fadeInRight animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <img src="images/team/team3.jpg" class="img-circle" alt="Team Member">
+                            <h2>James Bond</h2>
+                            <h5>Partner &amp; COO</h5>
+
+                            <p class="space-top-small">
+                                sit  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </p>
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul> -->
+                        <!-- </div>end team member -->
+                    <!-- </div> -->
+
+
+                <!-- </div>end row -->
+
+            <!-- </div>end container -->
+        <!-- </section> -->
+
+        <!--Funfact section-->
+        <!-- <section id="tweets" class="tweets">
+            <div class="overlay-img">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <div class="twitter-icon"><i class="fa fa-twitter"></i></div>
+                            <div id="tweet"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+
+
+<!--
+
+        <section id="clients" class="clients2 sections">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="client-wrapper2 wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="client" src="images/partner/partner1.png">
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="client" src="images/partner/partner2.png">
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="client" src="images/partner/partner3.png">
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <img alt="client" src="images/partner/partner4.png">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- <section id="contact" class="sections">
+            <div class="container">
+
+                <div class="row contact-2"> -->
+
+                    <!--  Heading-->
+                    <!-- <div class="heading wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                        <div class="title text-center"><h1>Contact Us</h1></div>
+                        <div class="subtitle text-center "><h5>Want to discuss your New Project ?</h5></div>
+                        <div class="separator text-center"></div>
+                    </div> -->
+
+
+                    <!-- <div class="col-md-8 col-md-offset-2 "> -->
+                        <!-- CONTACT FORM -->
+                        <!-- <div data-wow-offset="10" data-wow-duration="1.55s" class="wow rollIn animated contact-form">
+
+
+                            <div id="message"></div>
+                            <form method="post" action="scripts/contact.php" role="form" name="contactform" id="contactform">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control " name="email" id="email" placeholder="Email">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="form-control " id="subject" type="text" name="subject" placeholder="Subject">
+                                            <textarea class="form-control " id="msg" rows="5" placeholder="Message"></textarea>
+                                            <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit" data-loading-text="Loading..."><i class="fa fa-send"></i> Send Message</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- Newsletter-->
+        <!-- <section id="subscription">
+            <div class="subscription">
+                <div class="overlay-img">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="subscribtion-form center-block wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s">
+                                    <form id="mailchimp" class=" mailchimp form-inline" role="form" > -->
+
+                                        <!-- SUBSCRIPTION SUCCESSFUL OR ERROR MESSAGES -->
+                                        <!-- <h6 class="subscription-success"></h6> -->
+                                        <!-- <h6 class="subscription-error"></h6> -->
+                                        <!-- <input type="email" name="EMAIL" id="subscriber-email1" placeholder="Enter Your Email" class="form-control subscribe-input input-lg"> -->
+                                        <!-- SUBSCRIBE BUTTON -->
+                                        <!-- <button id="subscribe-button" class="btn btn-primary btn-lg" type="submit">Subscribe Now</button> -->
+
+                                    <!-- </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <footer id="footer">
+            <div class="footer-1-color colorsbg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3 text-center social">
+
+                            <h2>We Find Goods</h2>
+
+                            <span>Copyright @ wefindgoods 2020. All Rights Reserved</span><br>
+                            <!-- <a href="#"><span class="fa fa-facebook-square"></span></a>
+                            <a href="#"><span class="fa fa-twitter-square"></span></a>
+                            <a href="#"><span class="fa fa-linkedin-square"></span></a>
+                            <a href="#"><span class="fa fa-github-square"></span></a>
+                            <a href="#"><span class="fa fa-google-plus-square"></span></a>
+                            <a href="#"><span class="fa fa-pinterest-square"></span></a>
+                            <a href="#"><span class="fa fa-reddit-square"></span></a> -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <!--        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/jquery.wow.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/nivo-lightbox.min.js"></script>
+        <script src="js/jquery-contact.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/twitterFetcher_min.js"></script>
+        <script src="js/main.js"></script>
+
+
+         <!--canvas file-->
+    <script src="js/canvas/surface.js"></script>
+    <script src="js/canvas/surface1.js"></script>
+    <script src="js/canvas/canvas.js"></script>
+
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--        <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                    e.src='//www.google-analytics.com/analytics.js';
+                    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                    ga('create','UA-XXXXX-X');ga('send','pageview');
+                </script>-->
+
+
+
+
+
+    </body></html>

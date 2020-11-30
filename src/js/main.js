@@ -14,7 +14,7 @@ $(window).load(function () {
 var twitterID = '569000074533814272';  //
 
 // MailChimp OPTIN URL
-var mailchimpUrl = "http://facebook.us8.list-manage.com/subscribe/post-json?u=85f515a08b87483d03fee7755&id=dff5d2324f"; //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
+var mailchimpUrl = "http://facebook.us8.list-manage.com/subscribe/post-json?u=85f515a08b87483d03fee7755&id=dff5d2324f"; //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
 
 
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
 
     /*---------------------------------------------*
-     * STICKY TRANSPARENT NAVIGATION 
+     * STICKY TRANSPARENT NAVIGATION
      ---------------------------------------------*/
 
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
 
     /*---------------------------------------------*
-     * STICKY HIDE NAVIGATION 
+     * STICKY HIDE NAVIGATION
      ---------------------------------------------*/
 
     var windowWidth = $(window).width();
@@ -112,7 +112,7 @@ $(document).ready(function () {
 
     $('#mailchimp').ajaxChimp({
         callback: mailchimpCallback,
-        url: mailchimpUrl //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
+        url: mailchimpUrl //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
     });
     function mailchimpCallback(resp) {
         var rm = "0 -";
@@ -251,7 +251,7 @@ $(document).ready(function () {
      ---=  Twitter                ------
      ---------------------------------------------------= */
 
-  
+
 
     var xs_tweet = {
         "id": twitterID,
@@ -287,7 +287,7 @@ $(document).ready(function () {
 
     }
     if (self == top) { // its load with iframe or not
-        twitterFetcher.fetch(xs_tweet);
+        // twitterFetcher.fetch(xs_tweet);
     }
 
 

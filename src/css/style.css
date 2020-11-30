@@ -563,7 +563,7 @@ NAVIGATIONS
 =========================*/
 
 .navbar-header{
-    min-height: 70px
+    min-height: 70px;
 }
 .navbar-inverse .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a{

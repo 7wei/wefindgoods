@@ -1,5 +1,5 @@
 const submit = document.querySelector('#submit')
-const form = document.querySelector('#registration-form')
+const form = document.querySelector('#requestform')
 
 submit.addEventListener('click', function(){
   let nameField = document.querySelector('#name')

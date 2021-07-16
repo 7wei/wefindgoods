@@ -3415,3 +3415,14 @@ footer
 .social-link i:hover {
     color: rgba(255,255,255,1)
 }
+
+.partner_title {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.partner-header {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}

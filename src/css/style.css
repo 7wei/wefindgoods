@@ -3394,3 +3394,9 @@ footer
         page-break-after: avoid;
     }
 }
+
+.partner-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #1ac6ff
+}

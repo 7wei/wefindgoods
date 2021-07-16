@@ -180,23 +180,35 @@
   <script>
         // Get a reference to the form element, assuming
         // it contains the ID attribute "signup-form".
-        // var form = document.getElementById('requestform');
+        var form = document.getElementById('requestform');
 
         // Add a listener for the "submit" event.
-        // form.addEventListener('submit', function(event) {
+        form.addEventListener('submit', function(event) {
 
         // Prevent the browser from submitting the form
         // and thus unloading the current page.
-        // event.preventDefault();
+        event.preventDefault();
+
+          // Creates a timeout to call submitForm after one second.
+        setTimeout(submitForm, 1000);
+
+        var formSubmitted = false;
+
+        function submitForm() {
+        if (!formSubmitted) {
+            formSubmitted = true;
+            form.submit();
+        }
+        }
 
         // Send the event to Google Analytics and
         // resubmit the form once the hit is done.
-        // gtag('event', 'request_form_complete', {
-        //     'event_callback': function() {
-        //     form.submit();
-        //     }
-        // });
-        // });
+        gtag('event', 'request_form_complete', {
+            'event_callback': function() {
+            form.submit();
+            }
+        });
+        });
   </script>
     </body>
 </html>

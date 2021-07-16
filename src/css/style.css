@@ -3400,3 +3400,18 @@ footer
     margin-bottom: 15px;
     color: #1ac6ff
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-link i {
+    color: rgba(255,255,255,0.6)
+}
+
+.social-link i:hover {
+    color: rgba(255,255,255,1)
+}

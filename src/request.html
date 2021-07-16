@@ -124,7 +124,7 @@
                                           The detailed description will help the seller understand your needs (for example: product characteristics, models, specifications, materials, demand, delivery time, related certifications...)
                                         </small>
                                     </div>
-                                    <button class="btn btn-primary btn-lg" type="submit" id="submit" name="submit" data-loading-text="Loading..."><i class="fa fa-send"></i> Send Request</button>
+                                    <button class="btn btn-primary btn-lg" type="submit" id="submitBtn" name="submit" data-loading-text="Loading..."><i class="fa fa-send"></i> Send Request</button>
                                 </div>
                             </form>
                         </div>
@@ -185,21 +185,21 @@
         // Add a listener for the "submit" event.
         form.addEventListener('submit', function(event) {
 
-        // Prevent the browser from submitting the form
-        // and thus unloading the current page.
-        event.preventDefault();
+            // Prevent the browser from submitting the form
+            // and thus unloading the current page.
+            event.preventDefault();
 
-          // Creates a timeout to call submitForm after one second.
-        setTimeout(submitForm, 1000);
+            // Creates a timeout to call submitForm after one second.
+            setTimeout(submitForm, 1000);
 
-        var formSubmitted = false;
+            var formSubmitted = false;
 
-        function submitForm() {
-        if (!formSubmitted) {
-            formSubmitted = true;
-            form.submit();
-        }
-        }
+            function submitForm() {
+            if (!formSubmitted) {
+                formSubmitted = true;
+                form.submit();
+            }
+            }
 
         // Send the event to Google Analytics and
         // resubmit the form once the hit is done.
